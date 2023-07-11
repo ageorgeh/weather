@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="375dp"
+        android:layout_height="198dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/cityImage"
+        android:layout_width="311dp"
+        android:layout_height="194dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="81dp" />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="224dp"
+        android:layout_height="136dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="372dp"
+        android:layout_toEndOf="@+id/textViewTemp" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="115dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/cityName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textViewFeelsLikeTemp"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/textViewTemp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/textViewWeatherDesc"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textViewFeelsLikeTemp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="314dp" />
+
+</RelativeLayout>
